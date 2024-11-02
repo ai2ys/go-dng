@@ -11,7 +11,11 @@ on Linux.
 ## Building the SDK on Linux
 
 ```sh
-sudo apt install build-essentials zlib1g-dev libexpat1-dev
+sudo apt update && apt install \
+    build-essential \
+    zlib1g-dev \
+    libexpat1-dev \
+    libjpeg-dev
 
 git clone https://github.com/abworrall/go-dng.git
 cd go-dng
