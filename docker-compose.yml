@@ -1,0 +1,10 @@
+services:
+  dng-validate:
+    image: ai2ys/dng-sdk:${VERSION_DNG_SDK:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BRANCH: ${BRANCH:-main}
+    volumes:
+      - ${IMAGE_DIR:-./images}:/images
