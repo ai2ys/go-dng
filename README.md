@@ -1,7 +1,7 @@
 # The DNG SDK for linux & go
 
 Adobe's DNG SDK comes with only partial support for building on Linux.
-The makefiles in this repo will fetch, patch, and compile version 1.6 of the
+The makefiles in this repo will fetch, patch, and compile version 1.7.1 of the
 SDK on Linux (tested on Ubuntu 23.04), building the SDK as two static
 libraries that end up in `./sdk/lib` and `./sdk/include`.
 

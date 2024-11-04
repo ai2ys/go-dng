@@ -8,7 +8,7 @@ all: fetch libs dng_validate
 	@echo "\n*** success ***\n"
 
 
-DNGSDK_FILE = dng_sdk_1_6.zip
+DNGSDK_FILE = dng_sdk_$(VERSION_DNG_SDK_).zip
 ZLIB_FILE   = zlib-1.2.13.tar.gz
 
 ZLIB        = zlib-1.2.13
@@ -18,7 +18,7 @@ EXPAT       = libexpat
 # Targets to fetch / unpack / tweak source code for linux
 #
 $(DNGSDK_FILE):
-	wget https://download.adobe.com/pub/adobe/dng/dng_sdk_1_6.zip
+	wget https://download.adobe.com/pub/adobe/dng/dng_sdk_$(VERSION_DNG_SDK_).zip
 
 $(ZLIB_FILE):
 	wget https://www.zlib.net/fossils/zlib-1.2.13.tar.gz

@@ -1,4 +1,4 @@
-# This makefile expects to be run from dng_sdk_1_6/dng_sdk/source
+# This makefile expects to be run from dng_sdk_1_7_1/dng_sdk/source
 
 # Top level of the repo
 ROOT        = ../../../..
@@ -11,7 +11,7 @@ XMP_H       = $(ROOT)/sdk/$(DNGSDK)/xmp/toolkit/public/include
 INCLUDES    = -I$(SOURCE_H) -I$(OUR_H) -I$(XMP_H)
 
 CXXFLAGS   := $(CXXFLAGS) $(INCLUDES)
-LDFLAGS    := $(LDFLAGS) $(ROOT)/sdk/lib/$(XMP_LIB) -lexpat
+LDFLAGS    := $(LDFLAGS) $(ROOT)/sdk/lib/$(XMP_LIB) -lexpat -ljxl -ljxl_threads
 
 LIB_CPP_FILES := $(wildcard *.cpp)
 

@@ -1,11 +1,12 @@
 services:
   dng-validate:
-    image: ${DOCKER_IMAGE_NAME}:${VERSION_DNG_SDK:-latest}
+    image: ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile
       args:
         BRANCH: ${BRANCH:-main}
         REPO_URL: 
+        VERSION_DNG_SDK: 
     volumes:
       - ${IMAGE_DIR:-./images}:/images

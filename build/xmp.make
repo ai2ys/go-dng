@@ -1,5 +1,5 @@
-# This makefile expects to be run from dng_sdk_1_6/xmp/toolkit
-# All source & include dirs are releative to TOOLKIT = dng_sdk_1_6/xmp/toolkit
+# This makefile expects to be run from dng_sdk_1_7_1/xmp/toolkit
+# All source & include dirs are releative to TOOLKIT = dng_sdk_1_7_1/xmp/toolkit
 
 ROOT        = ../../../..
 TOOLKIT     = .
