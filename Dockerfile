@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app-dng
 ARG BRANCH=main
-RUN git clone https://github.com/ai2ys/go-dng.git -b ${BRANCH} --single-branch
+ARG REPO_URL=https://github.com/ai2ys/go-dng.git
+RUN git clone ${REPO_URL} -b ${BRANCH} --single-branch
 WORKDIR /app-dng/go-dng/sdk
 RUN make
 
