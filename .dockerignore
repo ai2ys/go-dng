@@ -1,5 +1,5 @@
 # ignore all
 * 
 # except for these files
-!build/
-!sdk/
+# !build/
+# !sdk/

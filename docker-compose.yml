@@ -8,5 +8,6 @@ services:
         BRANCH: ${BRANCH:-main}
         REPO_URL: 
         VERSION_DNG_SDK: 
+    working_dir: /images
     volumes:
       - ${IMAGE_DIR:-./images}:/images
